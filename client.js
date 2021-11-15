@@ -6,7 +6,7 @@ const name = 'Name: AA';
 const connect = function () {
 
     const name = 'Name: AA';
-    // const up = 'Move: up';
+    const up = 'Move: up';
     const down = 'Move: down';
     const right = 'Move: right';
     const left = 'Move: left';
@@ -20,8 +20,8 @@ const connect = function () {
     conn.setEncoding("utf8");
     conn.write(`${name}`);
 
-    // setInterval(() => {
-    //     conn.write(`${up}`)}, 3000);
+    setInterval(() => {
+        conn.write(`${up}`)}, 3000);
 
     setInterval(() => {
         conn.write(`${down}`)}, 3000);
